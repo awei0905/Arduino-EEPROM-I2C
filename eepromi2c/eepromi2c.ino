@@ -3,7 +3,7 @@
 void i2c_eeprom_write_byte( int deviceaddress, unsigned int eeaddress, byte data ) {
   int rdata = data;
   Wire.beginTransmission(deviceaddress);
-  Wire.write((int)(eeaddress >> 8)); // MSB
+  Wire.write((int)(eeaddress >> 8)); // MSB 
   Wire.write((int)(eeaddress & 0xFF)); // LSB
   Wire.write(rdata);
   Wire.endTransmission();
