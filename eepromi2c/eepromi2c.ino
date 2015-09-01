@@ -26,6 +26,8 @@ void setup()
   Wire.begin();
   Serial.begin(9600);
   Serial.println("The I2C Speed is 100kHz, Serial beginning.. ");
+  //Serial.println("The I2C Speed is 400kHz, Serial beginning.. ");
+  //Serial.println("The I2C Speed is 610kHz, Serial beginning.. ");
   //for (int i = 0; i < 256; i++)
   //{
   //  i2c_eeprom_write_byte(0x50, i, i);
